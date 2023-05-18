@@ -66,3 +66,5 @@ This project depends on the following libraries:
 The project does not have documentation yet.
 
 I hope this helps!
+
+</p>
