@@ -15,7 +15,9 @@ This project is a Laravel web crawler that runs on guzzle http and utilizes Goog
 
 1. Clone the repository:
 
-git clone https://github.com/okonueugene/newsapi.git
+    git clone https://github.com/okonueugene/newsapi.git
+
+    cd /newsapi
 
 2. Install the dependencies:
 
