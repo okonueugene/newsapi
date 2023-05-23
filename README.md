@@ -1,7 +1,3 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
-<p align="center">
-
 # Laravel News Crawler
 
 This project is a Laravel web crawler that runs on guzzle http and utilizes Google Search to get the latest news items for a particular topic.
@@ -66,5 +62,3 @@ This project depends on the following libraries:
 The project does not have documentation yet.
 
 I hope this helps!
-
-</p>
