@@ -45,9 +45,9 @@ localhost:8000/api/news
 
 The request can be customized by adding the following query parameters:
 
--   `q`: The search query.
--   `page`: The page number.
--   `per_page`: The number of news items per page.
+-   `searchQuery`: The search query.
+-   `topic`: The targeted filed of scope of the news.
+-   `location`: The locale, region or continent where the news if from.
 
 ## Dependencies
 

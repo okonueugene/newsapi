@@ -15,4 +15,5 @@ use App\Http\Controllers\NewsController;
 |
 */
 
+// http://127.0.0.1:8001/news?searchQuery=latest news&topic=Politics&location=Kenya
 Route::get('/news', [NewsController::class, 'news']);

@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use GuzzleHttp\Client;
@@ -8,11 +9,15 @@ class NewsController extends Controller
 {
     public function news(Request $request)
     {
-        $searchQuery = 'technology+innovation+manufacturing+sector'; // Refine search parameters
+        $searchQuery = $request->input('searchQuery');
+
+        $topic = $request->input('topic');
+
+        $location = $request->input('location');
 
         $client = new Client();
 
-        $crawler = $client->request('GET', 'https://news.google.com/news/rss/headlines/section/topic/TECHNOLOGY?hl=en-US&gl=US&ceid=US:en&q='.$searchQuery.'+location:africa');
+        $crawler = $client->request('GET', 'https://news.google.com/news/rss/headlines/section/topic/'.$topic.'?hl=en-US&gl=US&ceid=US:en&q='.$searchQuery.'+location:'.$location.'');
 
         $xml = simplexml_load_string($crawler->getBody()->getContents());
 
